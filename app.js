@@ -10,6 +10,25 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// Database connections
+/*const mysql = require('mysql')
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'dbuser',
+  password: 's3kreee7',
+  database: 'my_db'
+})
+
+connection.connect()
+
+connection.query('SELECT 1 + 1 AS solution', (err, rows, fields) => {
+  if (err) throw err
+
+  console.log('The solution is: ', rows[0].solution)
+})
+
+connection.end()*/
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
