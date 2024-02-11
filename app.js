@@ -7,6 +7,7 @@ var logger = require('morgan');
 // Sets up page router variables
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+// Router for the subdomain private.justinbattrick.com
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Sets up web address locations to the routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+// Web address location for the subdomain private.justinbattrick.com
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
