@@ -11,8 +11,6 @@ var usersRouter = require('./routes/users');
 /* Rules for this domain address:
 * - Only make this page available under certain conditions, such as a specified location and wifi name
 */
-var privateRouter = require('./routes/private');
-
 var portfolioRouter = require('./routes/portfolio');
 
 var app = express();
@@ -37,8 +35,6 @@ app.use('/users', usersRouter);
 /* Rules for this domain address:
 * - Only make this page available under certain conditions, such as a specified location and wifi name
 */
-app.use ('/private', privateRouter);
-
 app.use ('/portfolio', portfolioRouter);
 
 // catch 404 and forward to error handler
