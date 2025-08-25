@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
